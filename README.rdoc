@@ -1,0 +1,7 @@
+== README
+
+Consists of the usual steps to setting up a project. 
+
+• Normalize
+• Micro Clearfix
+• Box-sizing
