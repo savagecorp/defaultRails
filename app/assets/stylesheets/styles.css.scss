@@ -1,0 +1,34 @@
+// Place all the styles related to the static controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {background: azure;}
+
+.inner { @include outer-container; }
+
+header {
+  color: #FFF;
+  @include linear-gradient(#121212, #222);
+  padding:  1em 0;
+}
+
+.title { @include span-columns(6); }
+nav {
+  @include span-columns(6);
+  li {
+    float: right; 
+    margin: 8px 0 0 6px;
+    display: inline-block; 
+  }
+}
+
+a { @include transition-duration(0.3s);}
+.button { @include button();}
+.button:hover { color: #ccc;}
+
+
+section {
+  @include outer-container;
+  aside { @include span-columns(3); }
+  article { @include span-columns(9); }
+}
